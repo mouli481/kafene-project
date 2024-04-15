@@ -1,0 +1,14 @@
+.main_box{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(76, 89, 76);
+    position: relative;
+}
+.child_box{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(92, 110, 92);
+    position: absolute;
+    right: -150px;
+    bottom: -140px;
+}

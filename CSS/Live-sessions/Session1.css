@@ -1,0 +1,80 @@
+/* elements calling by tag name */
+
+/* div{
+    height: 200px;
+    width: 300px;
+    background-color: darkcyan;
+    border: 4px solid red;
+}  */
+
+/* element calling by id name */
+
+#demo1{
+    background-color: lavender;
+    border: 4px solid darkmagenta;
+    width: 200px;
+    padding: 20px;
+}
+#demo2{
+    background-color: pink;
+    border: 4px solid hotpink;
+    width: 200px;
+    padding: 20px;
+}
+#demo3{
+    background-color: salmon;
+    border:4px solid brown;
+    width: 200px;
+    padding: 20px;
+}
+/* elements calling by class name  */
+.group1{
+    background-color: lightblue;
+    height: 100px;
+    width: 50px;
+    display: inline-block;
+}
+.group2{
+    background-color: violet;
+    height: 100PX;
+    width: 50px;
+    display: inline-block;
+
+}
+/* 
+button{
+    background-color: yellow;
+    padding: 20px;
+    color: navy;
+    border: 2px solid navy;
+} */
+
+.border_radius{
+    height: 100px;
+    width: 200px;
+    background-color: salmon;
+    border: 5px solid brown;
+    border-radius: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<style>
+    /* Styles for the popup */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    
+    /* Styles for the overlay */
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+    
+    /* Styles for buttons */
+    button {
+      margin-right: 10px;
+    }
+    </style>
+</head>
+<body>
+
+<!-- Button to open the popup -->
+<button onclick="openPopup()">Open Popup</button>
+
+<!-- The popup -->
+<div id="popup" class="popup">
+  <h2>Popup Heading</h2>
+  <p>This is a paragraph in the popup.</p>
+  <select>
+    <option>Option 1</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+  </select>
+  <button onclick="save()">Save</button>
+  <button onclick="cancel()">Cancel</button>
+</div>
+
+<!-- The overlay -->
+<div id="overlay" class="overlay" onclick="closePopup()"></div>
+
+<script>
+// Function to open the popup
+function openPopup() {
+  document.getElementById("popup").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
+}
+
+// Function to close the popup
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
+}
+
+// Function to save the data (you can customize this according to your needs)
+function save() {
+  // Add functionality to save data here
+  alert("Data saved!");
+  closePopup();
+}
+
+// Function to cancel and close the popup
+function cancel() {
+  // Add functionality to cancel action here
+  closePopup();
+}
+</script>
+
+</body>
+</html>
+
+</body>
+</html>

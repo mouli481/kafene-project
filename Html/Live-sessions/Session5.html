@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Html Session 5</title>
+    <style>
+        #form_style{
+            border: 3px solid blue;
+            width: 300px;
+            margin-left:auto;
+            margin-right: auto;
+            margin-top: 50px;
+            padding: 20px;
+
+        }
+        #form_style label{
+            display: block;
+            margin: 10px;
+            color: darkred;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: bold;
+
+
+        }
+       
+        #form_style input{
+            display: block;
+            margin: 10px;
+            width: 85%;
+            padding: 10px;
+            font-size: 20px;
+            color: darkgreen;
+            font-style: italic;
+            border: 1px solid darkred;
+        }
+        #form_style input:focus{
+            /* outline: none; */
+            outline: 3px double darkgreen;
+            border: none;
+        }
+        /* #form_style #btn1{
+            background-color: white;
+            color: darkred;
+            width: 30%;
+            border: 5px double blue;
+            margin-left: auto;
+            margin-right: auto;
+        } */
+       #form_style input[type="submit"]{
+        background-color: white;
+            color: darkred;
+            width: 30%;
+            border: 5px double blue;
+            margin-left: auto;
+            margin-right: auto;
+       }
+    </style>
+</head>
+<body>
+    <!-- method="get" -->
+     <form method="post" action="thankyou_page.html">
+        <label>Name</label>
+        <input type="text" value="" name="name_input">
+        <label>password</label>
+        <input type="password" value="" name="password_input">
+        <input type="submit" value="submit">
+    </form>
+
+    <form>
+        <label>Date:</label>
+        <input type="date">
+        <br/><br/>
+        <label>Time :</label>
+        <input type="time">
+        <br/><br/>
+        <label>Month:</label>
+        <input type="month">
+        <br/><br/>
+        <label>Subjects :</label>
+        <select multiple>
+            <option>Html</option>
+            <option>css</option>
+            <option>Js</option>
+            <option selected>Node js</option>
+        </select>
+        <br/><br/>
+        <select>
+            <optgroup label="odd_num_grp">
+                <option>1</option>
+                <option>3</option>
+                <option>5</option>
+            </optgroup>
+
+            <optgroup label="even_num_grp">
+                <option>2</option>
+                <option>4</option>
+                <option>6</option>
+            </optgroup>
+        </select> 
+        
+        <label>color :</label>
+        <input type="color" value="#DEDB17">
+        <br/><br/>
+        <table>message :</table>
+        <textarea rows="7" cols="12"></textarea>
+        <label>Age :</label>
+        <input type="number" min="18" max="60">
+        <label>Range</label>
+        <input type="range">
+        <br/><br/>
+        <input type="datetime-local">
+        <br/><br/>
+        <input height="100" type="image" src="https://png.pngtree.com/png-clipart/20190903/original/pngtree-right-arrow-png-image_4421150.jpg" alt="submit">
+        <input type="submit" value="submit">
+
+
+    </form>
+
+
+
+    <form id="form_style">  
+        <label>UserName :</label>
+        <input type="text" placeholder="Enter Your Name">
+        <label>password :</label>
+        <input type="password" placeholder="Enter Your password">
+        <input type="submit" id="btn1">
+
+    </form>
+
+
+
+</body>
+</html>
+Session5.html
+Displaying Session5.html.
